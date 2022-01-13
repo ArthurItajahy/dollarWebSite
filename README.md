@@ -1,5 +1,5 @@
 ## I created this web site for Project of University.
-<div align="right">
+<div align="Left">
 <h2> Full Screen:</h2>
     <a href="https://github.com/emitpool">
       <img src='https://github.com/emitpool/WebSiteFacul/blob/main/img/FullScreen.gif' target="_blank"></a><br>
