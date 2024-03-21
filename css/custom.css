@@ -13,8 +13,8 @@ html, body{
     color: #fff;
 }
 .blue-logo:hover{
-    background-image: url('../img/flagyellow.jpg');
-    color: #000000;
+    background-color: rgb(0, 90, 143);
+    color: #ffffff;
 }
 .btn-large, .carousel-item img, .materialboxed ,.card ,.modal
 {
@@ -36,7 +36,7 @@ html, body{
 
 }
 .navbar ul a:hover{
-    background-image: url('../img/flagyellow.jpg');
+    background-color: rgb(2, 171, 194);
     color: rgb(0, 0, 0);
 }
 .nav-color{
@@ -47,7 +47,7 @@ html, body{
 /* Home 100%*/
 .home{
     animation:mudarbg 20s infinite;
-    background-image:  url('../img/ideia.jpg');
+    background-image:  url('../img/festival.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -75,7 +75,7 @@ ul li a{
     content:'';
     display:block;
     width:100px;
-    border-top: 2px solid #e9da05;
+    border-top: 2px solid #007896;
     margin: 15px auto;
 }
 .paragrafo{
@@ -110,14 +110,14 @@ ul li a{
 }
 /* SERVIÇOS*/
 .servicos {
-    background-image: url('../img/Lampada2.jpg');
+    background-color: #000000;
 }
 
 
 
 /* UNIDADES */
 .unidades {
-    background-image: url('../img/flagblack.jpg');
+    background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -143,7 +143,7 @@ ul li a{
     border:none;
 }
 .contato .informacoes{
-    background-image: url('../img/flagyellow.jpg');
+    background-color: #007896;
     min-height: 560px;
     padding: 30px;
 }
@@ -151,7 +151,7 @@ ul li a{
 .contato .formulario {
     min-height: 560px;
     padding: 30px;
-    background-image: url('../img/flagyellow.jpg');
+    background-color: #007896;
 }
 /* DEPOIMENTOS */
 .depoimentos {
@@ -176,7 +176,7 @@ ul li a{
 }
 /* RODAPE*/
 .rodape {
-    background-image: url('../img/flagyellow.jpg');
+    background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px 0;
@@ -218,52 +218,84 @@ nav i.material-icons, nav a.sidenav-trigger {
     color:#fff;
 }
 .tabs .tab a:hover, .tabs .tab a.active{
-    color:#FFFF00;
+    color:#088fa7;
 }
 .tabs .indicator{
-    background-color: #FFFF00;
+    background-color: #057c91;
 }
-/*Imagem de nosticias & fundo dos cards*/
-.card{
-    background-image: url('../img/flagyellow.jpg');
+/* Imagem de noticias & fundo dos cards */
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures all cards have the same height */
 }
-.Pixel{
+.card-content{
+    flex-grow: 1;
+}
+
+.Pixel {
     height: 250px;
     width: 350px;
-    border-radius:23px;
+    border-radius: 23px;
+    overflow: hidden; /* To ensure image doesn't overflow */
 }
 
+.Pixel img {
+    height: 100%; /* Ensures image fills container height */
+    width: 100%; /* Ensures image fills container width */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
 
-/* MEDIA*/
+/* MEDIA */
 @media only screen and (max-width: 480px) {
-.card-image-horizontal{
-    display:none;
-    
+    .card-image-horizontal {
+        display: none;
+    }
 
+    .curva img {
+        border-radius: 10px;
+    }
 }
-.curva img{
-    border-radius: 20px;
-}
-}  
+
 @media only screen and (min-width: 601px) {
- .banner {
-     padding-top: 4.5rem; 
- }
- .banner h2 {
- font-size: 4rem;
- }  
- .container{
-     width: 85%;
- }
+    .banner {
+        padding-top: 4.5rem;
+    }
+
+    .banner h2 {
+        font-size: 4rem;
+    }
+
+    .container {
+        width: 85%;
+    }
 }
+
 @media only screen and (min-width: 993px) {
-.banner {
-    padding-top: 5rem; 
+    .banner {
+        padding-top: 5rem;
+    }
+
+    .banner h2 {
+        font-size: 5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
 }
-.banner h2{
-    font-size: 5rem;
- }
- .container{
-    width: 90%;
+
+/* New Thing*/
+/* Principal Text */ 
+.text-with-shadow {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Offset-x, Offset-y, Blur-radius, Color */
 }
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px; /* Adjust spacing between icons as needed */
 }
