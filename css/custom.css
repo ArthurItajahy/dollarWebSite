@@ -308,35 +308,6 @@ nav i.material-icons, nav a.sidenav-trigger {
 
 
 
-.flag {
-    display: inline-block;
-    position: relative;
-    width: 300px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    overflow: hidden;
-}
-
-.flag-image {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    animation: sway 2s infinite alternate;
-}
-
-@keyframes sway {
-    0% {
-        transform: rotateZ(0) translateX(0);
-    }
-    50% {
-        transform: rotateZ(-10deg) translateX(-10px);
-    }
-    100% {
-        transform: rotateZ(0) translateX(0);
-    }
-}
-
-
-
 
 
 
