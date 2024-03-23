@@ -20,6 +20,12 @@
 </head>
 
 <body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="/img/wallfall.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <header>
         <!--MENU MOBILE-->
         <ul id="slide-out" class="sidenav">
@@ -52,7 +58,9 @@
         <div class="row container banner">
             <div class="col s12 center">
                 <h2 class="white-text text-light text-with-shadow " data-aos="fade-up" data-aos-duration="1000"
-                    data-aos-delay="0">Grupo nota de 100</h2>
+                    data-aos-delay="0">Grupo nota <br /> de </h2>
+
+                <img alt="Imagem Institucional" src="img/dollar.jpg" class="flag-image">
                 <h2 class="white-text text-light text-with-shadow " data-aos="fade-up" data-aos-duration="1000"
                     data-aos-delay="0">Records</h2>
 
@@ -69,8 +77,8 @@
     <section class="sobre bloco scrollspy" id="sobre">
         <div class="row container">
             <div class="col s12 center">
-                <h2 class="light titulo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Envolvido nos
-                    maiores shows</h2>
+                <h2 class="light titulo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Revelamos
+                    grandes artistas</h2>
             </div>
             <div class="col s12 l6">
                 <p class="par light" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
@@ -78,13 +86,13 @@
                     oferecendo aos artistas um conjunto abrangente de serviços de alta qualidade.
                     Inspirado pelas melhores práticas das grandes empresas do setor, o Grupo Nota de 100 Récordes busca
                     elevar a experiência artística,
-                    fornecendo suporte excepcional em áreas fundamentais como imagem, som e produção de shows.
+                    fornecendo suporte excepcional em áreas fundamentais como imagem, som e produção de shows.<br />
 
                     Com um compromisso inabalável com a excelência, a empresa se destaca ao oferecer um ambiente
                     propício para o crescimento
                     e desenvolvimento dos artistas, capacitando-os a alcançar seu potencial máximo. O Grupo Nota de 100
                     Récordes representa o futuro da indústria fonográfica, combinando expertise com uma visão
-                    progressista para impulsionar o sucesso e a inovação no mundo da música.
+                    progressista para impulsionar o sucesso e a inovação no mundo da música.<br />
 
                     Através de parcerias estratégicas e uma abordagem centrada no artista, o Grupo Nota de 100 Récordes
                     está posicionado como um líder em ascensão, pronto para moldar e influenciar positivamente o mercado
@@ -95,10 +103,18 @@
                 <div class="carousel carousel-slider " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
                     <a href="#" class="carousel-item">
                         <img alt="Imagem Institucional" src="img/caduFab.jpg">
-
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <iframe width="100%" height="100%" src="img/mcyaguin.mp4" frameborder="0"
+                            allowfullscreen></iframe>
                     </a>
 
+                    <a href="#" class="carousel-item">
+                        <iframe width="100%" height="100%" src="img/videoInstagram.mp4" frameborder="0"
+                            allowfullscreen></iframe>
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -335,7 +351,7 @@
                 // AUTOPLAY
                 function autoplay() {
                     $(".carousel").carousel("next");
-                    setTimeout(autoplay, 4500);
+                    setTimeout(autoplay, 4500000000000000000);
                 }
                 autoplay();
 
