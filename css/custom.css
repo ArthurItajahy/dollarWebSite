@@ -1,10 +1,22 @@
 
 /* HEIGHT 100%*/
 html, body{
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
-
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
 
 
 
@@ -23,7 +35,12 @@ html, body{
 }
 .btn-large, .carousel-item img, .materialboxed ,.card ,.modal
 {
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.modal{
+    width: 25%;
+    align-content: center;
 }
 
 /* LOGO*/
@@ -52,7 +69,7 @@ html, body{
 /* Home 100%*/
 .home{
     animation:mudarbg 20s infinite;
-    background-color: #000000;
+ 
     background-repeat: no-repeat;
     background-size: cover;
 }
